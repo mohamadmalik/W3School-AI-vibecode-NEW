@@ -16,7 +16,7 @@ import ReactMarkdown from 'react-markdown';
 
 // --- API HELPER FUNCTIONS ---
 
-const API_KEY = import.meta.env.VITE_GEMINI_API_KEY || process.env.NEXT_PUBLIC_GEMINI_API_KEY || "";
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "";
 const MODEL_NAME = "gemini-3-flash-preview";
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL_NAME}:generateContent?key=${API_KEY}`;
 

@@ -39,7 +39,7 @@ async function callGemini(prompt, systemInstruction = "") {
     return data.candidates[0].content.parts[0].text;
   } catch (error) {
     console.error("Gemini Error:", error);
-    return "Error: Could not communicate with the gods. Please check your connection or try again later.";
+    return "Error: Could not communicate with the System. Please check your connection or try again later.";
   }
 }
 
